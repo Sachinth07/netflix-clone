@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(Assets/Img/bg.jpg);
+    height: 70vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    /*Jo bada hoga 1200px Ya 100vw Mei Se*/
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    background-color: black;
+    filter: opacity(0.69);
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    justify-content: space-between;
+    display: flex;
+    max-width: 60vw;
+    margin: auto;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(229, 9, 20);
+    position: relative;
+    /* Ye postion and z-index pop out krne ke liye*/
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    padding: 0 30px;
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 100px);
+    /* Hm nav ki height minus ki hai */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    /*ye Pop out krne ke liye use krte hai */
+    gap: 23px;
+}
+
+.hero> :nth-child(1) {
+    /*Ye > sign mean immdeate first class*/
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.hero> :nth-child(2) {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.hero> :nth-child(3) {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.separation {
+    position: relative;
+    z-index: 20;
+    height: 7px;
+    background-color: rgb(51, 47, 47);
+}
+
+.btn {
+    gap: 40px;
+    padding: 7px 38px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid rgb(51, 47, 47);
+    cursor: pointer;
+}
+
+.btn-red {
+    /*Get Started*/
+    background: rgb(229, 9, 20);
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+
+}
+
+.btn-red:hover {
+    background-color: rgb(163, 27, 27);
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    color: white;
+    padding: 7px 101px 8px 14px;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid rgb(88, 84, 84);
+}
+
+.first {
+    display: flex;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    width: 485px;
+    top: 51px;
+    right: 0;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+}
+
+svg {
+    color: white;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.faq {
+    padding: 34px;
+    background-color: black;
+    color: white;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+}
+
+.faqbox {
+    font-size: 24px;
+    justify-content: space-between;
+    display: flex;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 65vw;
+    margin: 34px auto;
+    cursor: pointer;
+
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+@media screen and (max-width:1300px) {
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    nav {
+        max-width: 90vw;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .footer {
+        max-width: 90vw;
+    }
+
+    .footer-item {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        gap: 25px;
+    }
+}
